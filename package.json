@@ -1,0 +1,29 @@
+{
+  "name": "scrape-machine",
+  "version": "1.0.0",
+  "description": "scrapes cool stuff off websites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyann831/Scrape-Machine.git"
+  },
+  "keywords": [
+    "mongoose",
+    "mongodb",
+    "scraper"
+  ],
+  "author": "Ky-Ann Long",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyann831/Scrape-Machine/issues"
+  },
+  "homepage": "https://github.com/kyann831/Scrape-Machine#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.3",
+    "mongoose": "^5.5.2"
+  }
+}
