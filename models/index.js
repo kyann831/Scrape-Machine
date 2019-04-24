@@ -1,5 +1,5 @@
 // Exports model object 
 module.exports = {
-    article: require("./article")
+    article: require("./Article")
     // Comment: require("./Comment")
 };
