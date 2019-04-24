@@ -87,6 +87,13 @@ app.get("/articles/clear", function(req, res) {
   res.json('success');
 });
 
+app.put("/articles/save/:id", function(req, res) {
+  console.log(req.params.id);
+  db.article.findByIdAndUpdate(req.params.id, { saved: true }, function(err, doc) {
+    res.json('success');
+  });
+});
+
 // Route for grabbing a specific Article by id, populate it with it's note
 app.get("/articles/:id", function(req, res) {
   // Using the id passed in the id parameter, prepare a query that finds the matching one in our db...

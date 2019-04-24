@@ -7,9 +7,9 @@
 // });
 /* global bootbox */
 $(document).ready(function() {
-    // Setting a reference to the article-container div where all the dynamic content will go
-    // Adding event listeners to any dynamically generated "save article"
-    // and "scrape new article" buttons
+    // Setsreference to the article-container div 
+    // Adding event listeners added
+    // "scrape, save and clear article" buttons
     var articleContainer = $(".article-container");
     $(document).on("click", ".btn.save", handleArticleSave);
     $(document).on("click", ".scrape-new", handleArticleScrape);
@@ -109,7 +109,7 @@ $(document).ready(function() {
       // Using a patch method to be semantic since this is an update to an existing record in our collection
       $.ajax({
         method: "PUT",
-        url: "/api/headlines/" + articleToSave._id,
+        url: "/articles/save/" + articleToSave._id,
         data: articleToSave
       }).then(function(data) {
         // If the data was saved successfully
